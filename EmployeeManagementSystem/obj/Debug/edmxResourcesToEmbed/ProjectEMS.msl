@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectEMSModelStoreContainer" CdmEntityContainer="ProjectEMSEntities1">
+    <EntitySetMapping Name="HR_SignUp">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.HR_SignUp)">
+        <MappingFragment StoreEntitySet="HR_SignUp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobileno" ColumnName="mobileno" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_Departments">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.t_Departments)">
+        <MappingFragment StoreEntitySet="t_Departments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HOD" ColumnName="HOD" />
+          <ScalarProperty Name="RefHRID" ColumnName="RefHRID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_Employees">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.t_Employees)">
+        <MappingFragment StoreEntitySet="t_Employees">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="RefHRID" ColumnName="RefHRID" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobileno" ColumnName="Mobileno" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_PersonalInformations">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.t_PersonalInformations)">
+        <MappingFragment StoreEntitySet="t_PersonalInformations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="Passport_Exp_Date" ColumnName="Passport_Exp_Date" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Maritalstatus" ColumnName="Maritalstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="holidays">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.holiday)">
+        <MappingFragment StoreEntitySet="holidays">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Holidaysdate" ColumnName="Holidaysdate" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_leaves">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.t_leaves)">
+        <MappingFragment StoreEntitySet="t_leaves">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="TotalDays" ColumnName="TotalDays" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_payroll">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.t_payroll)">
+        <MappingFragment StoreEntitySet="t_payroll">
+          <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+          <ScalarProperty Name="Employee_name" ColumnName="Employee_name" />
+          <ScalarProperty Name="NetSalary" ColumnName="NetSalary" />
+          <ScalarProperty Name="E_Basic" ColumnName="E_Basic" />
+          <ScalarProperty Name="E_DA" ColumnName="E_DA" />
+          <ScalarProperty Name="E_HRA" ColumnName="E_HRA" />
+          <ScalarProperty Name="E_Conveyance" ColumnName="E_Conveyance" />
+          <ScalarProperty Name="Total_Earnings" ColumnName="Total_Earnings" />
+          <ScalarProperty Name="E_Allowance" ColumnName="E_Allowance" />
+          <ScalarProperty Name="D_TDS" ColumnName="D_TDS" />
+          <ScalarProperty Name="D_ESI" ColumnName="D_ESI" />
+          <ScalarProperty Name="D_PF" ColumnName="D_PF" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Total_Deductions" ColumnName="Total_Deductions" />
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectEMSModel.sysdiagram)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
